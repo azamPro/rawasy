@@ -1,5 +1,5 @@
 import { LucideIcon, TrendingUp, TrendingDown } from 'lucide-react';
-import { Card, CardContent } from './ui/Card';
+import { Card } from './ui/Card';
 import { cn } from '@/lib/utils';
 
 interface KPICardProps {
@@ -16,7 +16,7 @@ interface KPICardProps {
 export function KPICard({ title, value, icon: Icon, trend, className }: KPICardProps) {
   return (
     <Card className={cn('', className)}>
-      <CardContent className="p-6">
+      <div className="p-5">
         <div className="flex items-center justify-between gap-4">
           <div className="flex-1 min-w-0">
             <p className="text-sm font-medium text-muted-foreground whitespace-nowrap overflow-hidden text-ellipsis">
@@ -47,7 +47,7 @@ export function KPICard({ title, value, icon: Icon, trend, className }: KPICardP
             <Icon className="h-6 w-6 text-primary" />
           </div>
         </div>
-      </CardContent>
+      </div>
     </Card>
   );
 }
