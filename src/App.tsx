@@ -6,8 +6,6 @@ import { Dashboard } from './pages/Dashboard';
 import { Workers } from './pages/Workers';
 import { Incidents } from './pages/Incidents';
 import { Zones } from './pages/Zones';
-import { Devices } from './pages/Devices';
-import { Attendance } from './pages/Attendance';
 import { Reports } from './pages/Reports';
 import { Settings } from './pages/Settings';
 
@@ -66,8 +64,6 @@ function App() {
           <Route path="/workers" element={<Workers />} />
           <Route path="/incidents" element={<Incidents />} />
           <Route path="/zones" element={<Zones />} />
-          <Route path="/devices" element={<Devices />} />
-          <Route path="/attendance" element={<Attendance />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>

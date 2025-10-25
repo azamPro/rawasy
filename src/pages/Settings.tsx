@@ -130,28 +130,6 @@ export function Settings() {
             </div>
           </CardContent>
         </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-lg">Keyboard Shortcuts</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">Search</span>
-                <kbd className="px-2 py-1 bg-muted rounded text-xs">/</kbd>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">New item</span>
-                <kbd className="px-2 py-1 bg-muted rounded text-xs">N</kbd>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">Toggle theme</span>
-                <kbd className="px-2 py-1 bg-muted rounded text-xs">T</kbd>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </div>
   );

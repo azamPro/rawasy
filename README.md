@@ -1,4 +1,4 @@
-# WSI Admin Dashboard Prototype
+# Rawasy
 
 A modern, responsive admin dashboard for worker safety intelligence with complete CRUD functionality and data persistence.
 
@@ -8,8 +8,6 @@ A modern, responsive admin dashboard for worker safety intelligence with complet
 - **Workers**: Full CRUD management with filters and search
 - **Incidents**: Log and track safety incidents with severity levels
 - **Zones**: Manage site zones and geofences
-- **Devices**: Monitor IoT devices across zones
-- **Attendance**: Track worker check-ins and hours
 - **Reports**: Data analytics with export functionality
 - **Settings**: Theme customization and data management
 
@@ -42,12 +40,10 @@ npm run preview
 
 ## Data Persistence
 
-All data is stored in localStorage under the key `wsi-admin`. The app seeds demo data on first load with:
+All data is stored in localStorage. The app seeds demo data on first load with:
 - 24 workers across roles and shifts
 - 10 zones (surface, underground, restricted)
-- 18 IoT devices
 - 40 incidents over the last 14 days
-- 100+ attendance records
 
 ## Theming
 

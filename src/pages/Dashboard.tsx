@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { Users, Cpu, AlertTriangle, Shield } from 'lucide-react';
+import { Users, MapPin, AlertTriangle, Shield } from 'lucide-react';
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { useAppStore } from '@/store';
 import { KPICard } from '@/components/KPICard';
@@ -9,16 +9,16 @@ import { formatDateTime } from '@/lib/utils';
 import type { Incident } from '@/types';
 
 export function Dashboard() {
-  const { workers, devices, incidents } = useAppStore();
+  const { workers, zones, incidents } = useAppStore();
 
   const activeWorkers = useMemo(
     () => workers.filter((w) => w.status === 'Active').length,
     [workers]
   );
 
-  const onlineDevices = useMemo(
-    () => devices.filter((d) => d.status === 'Online').length,
-    [devices]
+  const activeZones = useMemo(
+    () => zones.filter((z) => z.active).length,
+    [zones]
   );
 
   const last24hIncidents = useMemo(() => {
@@ -95,9 +95,9 @@ export function Dashboard() {
           trend={{ value: 5, isPositive: true }}
         />
         <KPICard
-          title="Online Devices"
-          value={onlineDevices}
-          icon={Cpu}
+          title="Active Zones"
+          value={activeZones}
+          icon={MapPin}
           trend={{ value: 2, isPositive: true }}
         />
         <KPICard

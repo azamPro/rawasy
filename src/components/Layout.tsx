@@ -5,8 +5,6 @@ import {
   Users,
   AlertTriangle,
   MapPin,
-  Cpu,
-  Clock,
   FileText,
   Settings,
   Menu,
@@ -23,8 +21,6 @@ const navigation = [
   { name: 'Workers', href: '/workers', icon: Users },
   { name: 'Incidents', href: '/incidents', icon: AlertTriangle },
   { name: 'Zones', href: '/zones', icon: MapPin },
-  { name: 'Devices', href: '/devices', icon: Cpu },
-  { name: 'Attendance', href: '/attendance', icon: Clock },
   { name: 'Reports', href: '/reports', icon: FileText },
   { name: 'Settings', href: '/settings', icon: Settings },
 ];
@@ -61,9 +57,9 @@ export function Layout({ children }: LayoutProps) {
 
           <div className="flex items-center gap-2">
             <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">WSI</span>
+              <span className="text-primary-foreground font-bold text-sm">R</span>
             </div>
-            <h1 className="text-xl font-bold hidden sm:block">Admin Dashboard</h1>
+            <h1 className="text-xl font-bold hidden sm:block">Rawasy</h1>
           </div>
 
           <div className="ml-auto flex items-center gap-2">
